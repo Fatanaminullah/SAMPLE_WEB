@@ -17,7 +17,7 @@ export const renderField = ({
         placeholder={placeholder}
         type={type}
       />
-      <p style={{ color: "red" }}>
+      <p style={{ color: "red", textAlign: 'left', width: '70%' }}>
         {touched &&
           ((error && <span>{error}</span>) ||
             (warning && <span>{warning}</span>))}

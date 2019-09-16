@@ -8,11 +8,15 @@ import LoginForm from './login-form'
 
 class LoginComponent extends Component {
     render(){
+        const { onSubmit, actionButtonSubmit } = this.props
         return(
             <Fragment>
                 <Row  className="login-page" >
                     <Col align="center">
-                        <LoginForm />
+                        <LoginForm 
+                            onSubmit={onSubmit}
+                            actionButtonSubmit={actionButtonSubmit}
+                        />
                     </Col>
                 </Row>
             </Fragment>

@@ -11,7 +11,7 @@ const loginIcon = require('../../assets/images/icon-login.png')
 
 const LoginForm = props => {
   return (
-    <form id="login-form" className="login-form">
+    <form className="login-form" onSubmit={props.onSubmit}>
       <Row>
         <img alt="login-icon" src={loginIcon} className="login-icon" />
       </Row>
@@ -48,6 +48,7 @@ const LoginForm = props => {
           <Col span={24}>
               <SubmitButton 
                   label="Login"
+                  onClick={() => props.actionButtonSubmit('loginForm')}
               />
           </Col>
       </Row>
@@ -56,5 +57,5 @@ const LoginForm = props => {
 };
 
 export default reduxForm({
-    form: 'LoginForm'
+    form: 'loginForm'
   })(LoginForm)
