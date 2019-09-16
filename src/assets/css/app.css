@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.button-submit{
+  background-color: #2a9356;
+  width: 80%;
+  color: #fff;
+  border-radius: 20px;
+  border: 0.5 px solid #68fca6;
+  margin-top: 5vh;
+  transition: transform .5s; 
+  padding: 1vh;
+}
+.button-submit:hover{
+  transform: scale(1.1)
+}
