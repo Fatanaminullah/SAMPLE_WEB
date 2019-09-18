@@ -14,8 +14,12 @@ class WidgetInfoPrice extends Component {
           <Col span={10} align="left" >
             <span > Rp. {price} / Kg</span>
           </Col>
-          <Col>
-              <Icon
+          <Col span={4}>
+              <img 
+                alt="icon-rupiah" 
+                src={require('../../../../assets/images/rupiah-icon.png')} 
+                className="icon-widget"
+                />
           </Col>
         </Row>
         <Row className="dashboard-item-widget-button">
