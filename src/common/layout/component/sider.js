@@ -13,6 +13,11 @@ class LayoutSider extends Component {
           collapsible
           collapsed={this.props.collapsed}
           theme="light"
+          style={{
+            overflow: "auto",
+            height: "100vh",
+            left: 0,
+          }}
         >
           <div className="logo">
             <img
@@ -21,9 +26,9 @@ class LayoutSider extends Component {
               className="rounded-circle profile-picture mx-1"
             />
           </div>
-          <Menu theme="light" mode="inline" defaultSelectedKeys="dashboard">
+          <Menu theme="dark" mode="inline" defaultSelectedKeys="dashboard">
             <Menu.Item key="dashboard">
-              <Link to="/dashboard"> 
+              <Link to="/dashboard">
                 <Icon type="home" />
                 <span>Dashboard</span>
               </Link>
@@ -35,15 +40,45 @@ class LayoutSider extends Component {
               </Link>
             </Menu.Item>
             <Menu.Item key="kependudukan">
-                <Link to="/kependudukan">
-                  <Icon type="upload" />
-                  <span>Kependudukan</span>
-                </Link>
+              <Link to="/kependudukan">
+                <Icon type="upload" />
+                <span>Kependudukan</span>
+              </Link>
             </Menu.Item>
             <Menu.Item key="statistik">
               <Link to="/statistik">
                 <Icon type="chart" />
                 <span>Statistik</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="layanan-surat">
+              <Link to="/layanan-surat">
+                <Icon type="message" />
+                <span>Layanan Surat</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="layanan-surat">
+              <Link to="/layanan-surat">
+                <Icon type="message" />
+                <span>Layanan Surat</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="layanan-surat">
+              <Link to="/layanan-surat">
+                <Icon type="message" />
+                <span>Layanan Surat</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="layanan-surat">
+              <Link to="/layanan-surat">
+                <Icon type="message" />
+                <span>Layanan Surat</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="layanan-surat">
+              <Link to="/layanan-surat">
+                <Icon type="message" />
+                <span>Layanan Surat</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="layanan-surat">

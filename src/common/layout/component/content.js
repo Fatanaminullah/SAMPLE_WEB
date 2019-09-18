@@ -15,7 +15,7 @@ class LayoutContent extends Component {
     render(){
         return(
             <React.Fragment>
-                <Content style={{ margin: '0 1%', marginTop: '-1.5%', padding: '24px' }}>
+                <Content style={{ margin: '0 1%', marginTop: '-1.5%', padding: '24px', overflow: 'initial' }}>
                     {this.props.childComponent}
                 </Content>
             </React.Fragment>

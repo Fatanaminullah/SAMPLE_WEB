@@ -1,0 +1,57 @@
+.dashboard-item-widget{
+    border-radius: 10px;
+    max-height: 250px;
+    margin: 2vh;
+    height: 30vh;
+    padding: 1vh;
+}
+.dashboard-item-widget.primary{
+    background-color: #03505a;
+    color:#fff;
+}
+.dashboard-item-widget.success{
+    background-color: #23572b;
+}
+.dashboard-item-widget.danger{
+    background-color: #a70a0a;
+}
+.dashboard-item-widget.secondary{
+    background-color: #9edae2;
+}
+.dashboard-item-widget.warning{
+    background-color: #d4d119;
+}
+.dashboard-item-widget.purple{
+    background-color: rgb(44, 18, 68);
+}
+.dashboard-item-value{
+    font-size: 7vh;
+    font-family: 'Lucida Sans'
+}
+.dashboard-item-description{
+    font-size: 3vh;
+    font-family: 'Cambria';
+}
+.dashboard-item-widget-button{
+    text-align: center;
+    border-top: 1px solid white;
+    margin-top: 2px;
+    padding: 1vh;
+    transition: transform .3s; 
+}
+.dashboard-item-widget-button:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+.icon-widget{
+    width: 80%;
+    max-width: 100px;
+    opacity: 0.4;
+    transition: transform .5s; 
+}
+.icon-widget:hover{
+    transform: scale(1.1)
+}
+.widget-info-price{
+    font-size: 20px;
+}
